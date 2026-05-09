@@ -1,4 +1,4 @@
-![Please view my resume as a .pdf file.](https://github.com/dyao13/Resume/blob/main/yao_resume/yao_resume.png)
+![Please view my resume as a .pdf file.](https://github.com/dyao13/Resume/blob/main/images/yao_resume.jpg)
 
 To download the .pdf version, please refer to
 ```

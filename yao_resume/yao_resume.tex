@@ -15,6 +15,8 @@
 \pagestyle{empty}                   % disable page numbering
 \flushbottom                        % align text to the bottom of the page
 
+\usepackage{setspace}
+
 % ensure PDF output will be all-Unicode and machine-readable
 \input{glyphtounicode}
 \pdfgentounicode=1
@@ -28,6 +30,7 @@
 
 % resume starts here
 \begin{document}
+% \setstretch{1.05}
 
 % name
 \centerline{\Huge Daniel Yao}
@@ -43,27 +46,49 @@
 \section*{Education}
 
 \textbf{Johns Hopkins University} \hfill Baltimore, MD \\
-B.S. Applied Mathematics and Statistics, B.S. Computer Science \hfill Expected May 2027 \\
-4.00 GPA, 36 ACT, 1590 SAT \\
+M.S.E. Applied Mathematics and Statistics \hfill Expected May 2027 \\
+4.00 GPA
+
+\vspace{9pt}
+
+B.S. Biomedical Engineering, B.S. Applied Mathematics and Statistics \hfill Expected May 2027 \\
+4.00 GPA, 36 ACT, 1590 SAT, 528 MCAT \\
 
 \vspace{-9pt}
 
 % skills section
-\section*{Skills}
+% \section*{Skills}
 
-\textbf{Languages:} Python, R \\
-\textbf{Technologies:} pandas, NumPy, SciPy, scikit-learn, Tensorflow, PyTorch, Jupyter, Git
+% \textbf{Languages:} Python, R \\
+% \textbf{Technologies:} scikit-learn, PyTorch, pandas, NumPy, SciPy, JAX, Jupyter, Git
 
-\vspace{-9pt}
+% \vspace{-9pt}
 
 % experience section
 \section*{Experience}
 
+\textbf{Oberst Lab, Johns Hopkins University} \hfill Aug 2025 - Present \\
+\textit{Undergraduate Research Assistant} \vspace{-9pt} \\
+\begin{itemize}
+  \item Write and be awarded \$3,000, \$6,000 Provost's Undergraduate Research Award (2025, 2026)
+  \item Characterize asymptotic properties of active sampling estimators for label-efficient machine learning evaluation
+  \item Investigate heuristic sampling rules for text- and image-based models with Monte Carlo simulations in Python
+\end{itemize}
+
 \textbf{Johns Hopkins University} \hfill Aug 2024 - Present \\
 \textit{Teaching Assistant} \vspace{-9pt} \\
 \begin{itemize}
-  \item Lead 20-student weekly recitations for upper-level EN.553.420 Probability
-  \item Write review guides: \href{https://github.com/dyao13/EN_553_420_SP24}{github.com/dyao13/EN\_553\_420\_SP24}, \href{https://github.com/dyao13/EN_553_431_FA24}{github.com/dyao13/EN\_553\_431\_FA24}
+  \item Lead recitations and hold office hours for upper-level Probability (FA24, SP25, FA25, SP26)
+  \item Hold office hours for Data Structures (FA25, SP26)
+  % \item Write review guides: \href{https://github.com/dyao13/EN_553_420_SP24}{github.com/dyao13/EN\_553\_420\_SP24}, \href{https://github.com/dyao13/EN_553_431_FA24}{github.com/dyao13/EN\_553\_431\_FA24}
+\end{itemize}
+
+\textbf{Pediatric ICU, Johns Hopkins Medicine} \hfill Aug 2024 - Present\\
+\textit{Undergraduate Research Assistant} \vspace{-9pt}
+\begin{itemize}
+  \item Co-write and be awarded \$50,000 Malone Seed Grant (2025) for interdiscplinary research in healthcare
+  \item Compare sedation-agitation scores with vitals, accelerometry, and drug administrations to develop statistical models for pediatric sedation
+  % \item Extract heart-rate variability features from 250 Hz ECG data in time and frequency domains with neurokit2 and model pharmacodynamics with Runge-Kutta methods
 \end{itemize}
 
 \textbf{Clark Lab, Johns Hopkins University} \hfill Jan 2025 - May 2025 \\
@@ -73,39 +98,54 @@ B.S. Applied Mathematics and Statistics, B.S. Computer Science \hfill Expected M
   \item Simulated pressure-volume loop with nonlinear circuit model using PSpice and Simulink to generate data for 17,280 combinations of parameters
 \end{itemize}
 
-\textbf{McCallion Lab, Johns Hopkins Medicine} \hfill May 2024 – Present \\
-\textit{Undergraduate Research Assistant} \vspace{-9pt} \\
-\begin{itemize}
-  \item Edit iPS cells with CRISPR Del/Rei to investigate the role of cis-regulatory elements in Parkinson’s Disease
-  \item Analyze scRNA-Seq data with Seurat in R to study transcriptional differences in Parkinson’s-positive mice
-\end{itemize}
+% \textbf{McCallion Lab, Johns Hopkins Medicine} \hfill May 2024 – Present \\
+% \textit{Undergraduate Research Assistant} \vspace{-9pt} \\
+% \begin{itemize}
+%   \item Edit iPS cells with CRISPR Del/Rei to investigate the role of cis-regulatory elements in Parkinson’s Disease
+%   \item Analyze scRNA-Seq data with Seurat in R to study transcriptional differences in Parkinson’s-positive mice
+% \end{itemize}
 
-\vspace{-18.5pt}
+% \vspace{-18pt}
 
 % projects section
-\section*{Projects}
+% \section*{Projects}
 
-\textbf{Pediatric Sedation Assessment} | \href{https://github.com/dyao13/PedAccel}{github.com/dyao13/PedAccel} \hfill Aug 2024 - Present \vspace{-9pt} \\
-\begin{itemize}
-  \item Develop statistical model to calculate sedative dosages for pediatric critical-care patients in Python
-  \item Extract heart-rate variability features from 250 Hz ECG data in time and frequency domains and analyze nonlinear features with Poincare maps using SciPy, scikit-learn, and neurokit2
-  \item Model pharmacokinetics with Runge-Kutta methods to quantify effects of sedatives on vitals and accelerometry
-  \item Train ordinal regression model with mord and scikit-learn to predict sedation levels with 90\% accuracy
-\end{itemize}
+% \textbf{Brawl Stars Draft Engine} | \href{https://github.com/dyao13/BrawlStars}{github.com/dyao13/BrawlStars} \hfill Jul 2024 - Aug 2024 \vspace{-9pt} \\
+% \begin{itemize}
+%   \item Searched for optimal draft of 3 picks out of 82 characters per team via minimax algorithm with alpha-beta pruning to yield a 12\% edge over human players in friendly matches
+%   \item Scraped e-sports games using beautifulsoup4 and logged ranked games with BrawlStarsAPI
+%   \item Employed draft strategies to reach top 1000 global ranking out of 15 million monthly players
+% \end{itemize}
 
-\textbf{Brawl Stars Draft Engine} | \href{https://github.com/dyao13/BrawlStars}{github.com/dyao13/BrawlStars} \hfill Jul 2024 - Aug 2024 \vspace{-9pt} \\
-\begin{itemize}
-  \item Searched for optimal draft of 3 picks out of 82 characters per team via minimax algorithm with alpha-beta pruning to yield a 12\% edge over human players in friendly matches
-  \item Scraped e-sports games using beautifulsoup4 and logged ranked games with BrawlStarsAPI
-  \item Employed draft strategies to reach top 1000 global ranking out of 15 million monthly players
-\end{itemize}
+% \textbf{Patient Referral Scheduler} | \href{https://github.com/dyao13/RefMe}{github.com/dyao13/RefMe} \hfill Jul 2024 - Aug 2024 \vspace{-9pt} \\
+% \begin{itemize}
+%   % \item Co-write and be awarded \$1,000 JHU Catalyst Award for early-stage research and development
+%   \item Optimized scheduling of patient referrals from a random data stream with Markov Decision Process model and Monte Carlo methods in R to yield a 25\% improvement over a first-come-first-serve model
+%   \item Collaborated with Hospital Cepon, Florianopolis, Brazil to validate model on 24,000 retrospective surgeries
+% \end{itemize}
 
-\textbf{Patient Referral Scheduler} | \href{https://github.com/dyao13/RefMe}{github.com/dyao13/RefMe} \hfill Jul 2024 - Aug 2024 \vspace{-9pt} \\
-\begin{itemize}
-  \item Awarded \$1000 JHU Catalyst Grant for early-stage research and development
-  \item Optimized scheduling of patient referrals from a stochastic data stream to prioritize high-urgency patients in R
-  \item Computed solutions via Monte Carlo methods and integer linear programming to yield a 25\% improvement over a first-come-first-serve model
-\end{itemize}
+\vspace{-18pt}
+
+% abstracts section
+\section*{Abstracts}
+
+\textbf{Yao, D}., Lebarbenchon, K., Clark, A. (2026). Intelligent pressure control ventilation management from a PV loop perspective. Mid-Atlantic Research Exchange. [Best poster award] \\
+
+\vspace{9pt}
+
+\textbf{Yao, D}., Oberst, M. (2026). Label-efficient recall evaluation for zero-shot classification. Mid-Atlantic Research Exchange. \\
+
+\vspace{9pt}
+
+Hoffmann, J., Raghavan, S., Day, M., \textbf{Yao, D.}, Morrissey, M, Roy, S., Brown, K., Durr, N., Kudchadkar, S., Fackler, J., LaRosa, J. (2026). Continuous physiological monitoring reveals poor PRN sedation efficacy in pediatric critical care. Critical Care Congress. [Oral presentation] \\
+
+\vspace {9pt}
+
+Raghavan, S., Hoffmann, J., Day, M., Roy, S., Pejic, B., Morrissey, O., Moyer, C., \textbf{Yao, D.}, Brown, K., Durr, N., Kudchadkar, S., Fackler, J., LaRosa, J. (2026). Rethinking pediatric sedation assessment: a statistical evaluation of the State Behavioral Scale. Critical Care Congress. [Oral presentation] \\
+
+\vspace{9pt}
+
+Liu, S., Sargent C., Broman L., \textbf{Yao, D.} (2024). Role of CRF1 and CRF2 receptors in stress-induced increase in intestinal permeability in the mouse colon. Physiology 39(S1), 815. \href{https://doi.org/10.1152/physiol.2024.39.S1.815}{doi.org/10.1152/physiol.2024.39.S1.815}. \\
 
 \vspace{-9pt}
 
